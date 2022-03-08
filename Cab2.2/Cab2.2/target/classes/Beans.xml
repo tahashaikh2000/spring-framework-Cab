@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cab1" class="com.niit.domain.Cab" autowire="byName">
+        <property name="CustomerId" value="101"/>
+        <property name="Fair" value="1000"/>
+    </bean>
+
+    <bean id="cab2" class="com.niit.domain.Cab" autowire="byName">
+        <property name="CustomerId" value="102"/>
+        <property name="Fair" value="100"/>
+    </bean>
+
+
+</beans>
